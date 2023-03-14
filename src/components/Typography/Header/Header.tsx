@@ -5,7 +5,7 @@ interface HeaderProps {
 }
 
 const Header = ({ children }: HeaderProps) => {
-	return <h2 className={s.Header}>{children}</h2>
+	return <h2 className={s.header}>{children}</h2>
 }
 
 // hgroup

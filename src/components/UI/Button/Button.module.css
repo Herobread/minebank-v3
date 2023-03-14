@@ -29,6 +29,7 @@
 }
 
 .normal:focus:enabled {
+	border: var(--normal-border-size) solid var(--accent-6);
 	outline: var(--active-border-size) solid var(--accent-4);
 }
 

@@ -6,7 +6,7 @@
     /* font-size: 14px; */
 
     /* outline: 0.5px white solid !important; */
-    /* background-color: rgb(93 255 129 / 17%); */
+    /* background-color: rgb(93 255 129 / 17%);*/
 }
 
 :root {
@@ -28,7 +28,6 @@
 
     --normal-border-size: 2px;
     --active-border-size: 4px;
-
 }
 
 html {

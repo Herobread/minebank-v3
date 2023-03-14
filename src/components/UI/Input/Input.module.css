@@ -4,7 +4,6 @@
 
 .input {
     width: 100%;
-
     outline: 0px solid var(--accent-1);
     border: 2px solid var(--accent-4);
     border-radius: 5px;
