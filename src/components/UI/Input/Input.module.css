@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+
+    outline: 0px solid var(--accent-1);
+    border: 2px solid var(--accent-4);
+    border-radius: 5px;
+    padding: 7px;
+    font-family: inherit;
+    font-weight: 600;
+
+    background-color: var(--accent-2);
+
+    transition: ease-in-out 0.1s;
+}
+
+.input:hover {
+    outline: 2px solid var(--accent-4);
+}
+
+.labelText {
+    padding-bottom: 6px;
+}
+
+.input:focus {
+    border: 2px solid var(--accent-5);
+
+    outline: 4px solid var(--accent-4);
+}
+
+.errorInput {
+    color: var(--red);
+    border-color: var(--red) !important;
+    background-color: var(--dark-red);
+}
+
+.errorInput::placeholder {
+    color: var(--dimmed-red);
+}
+
+.errorInput:focus {
+    outline: 6px solid var(--dark-red);
+}
+
+.errorMessage {
+    padding-top: 6px;
+}
+
+.error {
+    color: var(--red);
+}

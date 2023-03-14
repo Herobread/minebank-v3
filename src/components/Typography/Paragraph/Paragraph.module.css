@@ -1,0 +1,11 @@
+.paragraph {
+	color: var(--accent-6);
+}
+
+.success {
+	color: var(--lime);
+}
+
+.error {
+	color: var(--red);
+}

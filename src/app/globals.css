@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    /* font-size: 14px; */
+
+    /* outline: 0.5px white solid !important; */
+    /* background-color: rgb(93 255 129 / 17%); */
+}
+
+:root {
+    --dark-red: #291818;
+    --dimmed-red: #C54444;
+    --red: #FF5454;
+
+    --accent-0: #000000;
+    --accent-1: #121212;
+    --accent-2: #151515;
+    --accent-4: #222222;
+    --accent-5: #666666;
+    --accent-6: #9a9a9a;
+    --accent-7: #d9d9d9;
+    --accent-8: #eaeaea;
+    --accent-9: #ffffff;
+
+    --lime: #54ff6f;
+
+    --normal-border-size: 2px;
+    --active-border-size: 4px;
+
+}
+
+html {
+    color-scheme: dark;
+    background-color: var(--accent-1);
+
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+
+    transition: 0.2s;
+}
+
+a:hover {
+    color: var(--accent-7);
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* @media (prefers-color-scheme: dark) {
+} */

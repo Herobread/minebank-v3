@@ -1,0 +1,72 @@
+.button {
+	width: fit-content;
+	padding: 6px 20px;
+
+	border-radius: 7px;
+	outline: var(--normal-border-size) solid var(--accent-4);
+	border: var(--normal-border-size) solid var(--accent-5);
+	background-color: var(--accent-2);
+
+	font-weight: 600;
+	font-size: 14px;
+
+	cursor: pointer;
+
+	transition: 0.1s ease;
+}
+
+.normal:enabled {}
+
+.normal:hover:enabled {
+	background-color: var(--accent-3);
+}
+
+/* on click */
+.normal:active:enabled {
+	background-color: var(--accent-4);
+}
+
+.normal:focus:enabled {
+	outline: var(--active-border-size) solid var(--accent-4);
+}
+
+
+
+
+
+.accent {
+	background-color: var(--accent-7);
+	outline: var(--normal-border-size) solid var(--accent-7);
+	color: var(--accent-0);
+}
+
+.accent:hover:enabled {
+	outline: var(--normal-border-size) solid var(--accent-6);
+	background-color: var(--accent-6);
+	color: var(--accent-0);
+}
+
+.accent:focus:enabled {
+	outline: var(--normal-border-size) solid var(--accent-6);
+	background-color: var(--accent-6);
+}
+
+.accent:active:enabled {
+	background-color: var(--accent-5);
+	outline: var(--normal-border-size) solid var(--accent-5);
+
+	transition: 0s;
+}
+
+/* .accent:is([disabled]) {
+	background-color: var(--accent-5);
+	outline: var(--normal-border-size) solid var(--accent-5);
+} */
+
+.disabled {
+	cursor: not-allowed;
+}
+
+/* .normal.disabled {
+	outline: var(--normal-border-size) solid var(--accent-6);
+} */

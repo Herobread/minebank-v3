@@ -5,7 +5,7 @@ interface CompactHeader {
 }
 
 const CompactHeader = ({ children }: CompactHeader) => {
-	return <h2 className={s.header}>{children}</h2>
+	return <h3 className={s.header}>{children}</h3>
 }
 
 export default CompactHeader
