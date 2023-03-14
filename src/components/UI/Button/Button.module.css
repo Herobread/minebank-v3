@@ -3,8 +3,8 @@
 	padding: 6px 20px;
 
 	border-radius: 7px;
-	outline: var(--normal-border-size) solid var(--accent-4);
-	border: var(--normal-border-size) solid var(--accent-5);
+	outline: 0px solid var(--accent-4);
+	border: var(--normal-border-size) solid var(--accent-4);
 	background-color: var(--accent-2);
 
 	font-weight: 600;
@@ -12,18 +12,20 @@
 
 	cursor: pointer;
 
-	transition: 0.1s ease;
+	transition: 0.2s ease;
 }
-
-.normal:enabled {}
 
 .normal:hover:enabled {
 	background-color: var(--accent-3);
+	outline: var(--active-border-size) solid var(--accent-4);
 }
 
 /* on click */
 .normal:active:enabled {
 	background-color: var(--accent-4);
+	border: var(--normal-border-size) solid var(--accent-6);
+
+	transition: 0s background-color;
 }
 
 .normal:focus:enabled {
@@ -36,26 +38,29 @@
 
 .accent {
 	background-color: var(--accent-7);
-	outline: var(--normal-border-size) solid var(--accent-7);
-	color: var(--accent-0);
-}
-
-.accent:hover:enabled {
-	outline: var(--normal-border-size) solid var(--accent-6);
-	background-color: var(--accent-6);
+	border: var(--normal-border-size) solid var(--accent-7);
 	color: var(--accent-0);
 }
 
 .accent:focus:enabled {
-	outline: var(--normal-border-size) solid var(--accent-6);
+	outline: var(--active-border-size) solid var(--accent-5);
+}
+
+.accent:hover:enabled {
+	color: var(--accent-0);
+	outline: var(--active-border-size) solid var(--accent-5);
+}
+
+.accent:disabled {
 	background-color: var(--accent-6);
+	border: var(--normal-border-size) solid var(--accent-6);
 }
 
 .accent:active:enabled {
-	background-color: var(--accent-5);
-	outline: var(--normal-border-size) solid var(--accent-5);
+	color: var(--accent-0);
+	background-color: var(--accent-6);
 
-	transition: 0s;
+	transition: 0s background-color;
 }
 
 /* .accent:is([disabled]) {
